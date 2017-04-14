@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="Clear Marker"
+        android:icon="@drawable/ic_cancel_black_24dp"
+        android:id="@+id/clear_marker_item"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:title="Share"
+        android:id="@+id/share_item"
+        android:icon="@drawable/ic_share_black_24dp"
+        app:showAsAction="ifRoom"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        />
+
+
+
+</menu>

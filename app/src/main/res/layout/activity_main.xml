@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:toolbar="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb"
+        layout="@layout/main_toolbar"
+        toolbar:elevation="4dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="#7b77ff"
+        android:title="@string/tb_title"
+        android:titleTextColor="#fff"
+        />
+
+    <!--
+    <ViewStub
+        android:id="@+id/view_stub"
+        android:inflatedId="@+id/inflated_stub"
+        android:layout="@layout/card_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tb"
+        android:layout_marginTop="40dp"/>
+    -->
+
+
+    <include layout="@layout/card_duration"
+        android:id="@+id/shift_time_display"
+        android:layout_height="60dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tb"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        />
+
+
+    <Button
+        android:id="@+id/user_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="#00de4e"
+        android:padding="4dp"
+        android:text="@string/start_text"
+        android:textColor="#ffff"
+        android:textSize="30sp" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/coordinator_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            app:elevation="2dp"
+            android:src="@drawable/ic_near_me_black_8dp"
+            app:fabSize="normal"/>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>
+
+
+

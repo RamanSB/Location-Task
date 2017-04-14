@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LocationTask</string>
+    <string name="start_text">Start Shift</string>
+    <string name="end_text">End Shift</string>
+    <string name="tb_title">Location Task</string>
+    <string name="sample_shift_time_text">1h 34m 12s</string>
+</resources>
